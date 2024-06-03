@@ -1,0 +1,66 @@
+<div class="row mb-1 custom-border" *ngFor="let fournisseur of fournisseurs">
+    <div class="col-md-2 border-right m-0">
+        <img [src]="fournisseur.image || 'assets/product.png'" width="140px" height="105px" alt="article Image">
+
+    </div>
+  
+    <!-- Details article -->
+    <div class="col-md-4 border-right m-0">
+        <div class="col">
+            <div class="row">
+                <div class="col-md-1"><i class="fas fa-info-circle blue-color"></i></div>
+                <div class="col-md-11">{{fournisseur.Nom}}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"><i class="fas fa-info-circle blue-color"></i></div>
+                <div class="col-md-11">{{fournisseur.Prenom}}</div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"><i class="fas fa-phone-alt blue-color"></i></div>
+                <div class="col-md-11">{{fournisseur.Telephone}}</div>
+            </div>
+            
+        </div>
+    </div>
+    <!--  details categorie-->
+  <div class="col-md-3 custom-border-right mb-1 mt-1 ">
+    <div class="col">
+        <div class="row">
+            <div class="col-md-1"><i class="fas fa-home blue-color"></i></div>
+            <div class="col-md-10">{{fournisseur.Adresse1}}</div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"><i class="fas fa-map-marker-alt blue-color"></i></div>
+            <div class="col-md-10">{{fournisseur.Ville}}</div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"><i class="fas fa-globe-europe blue-color"></i></div>
+            <div class="col-md-10">{{fournisseur.Pays}}</div>
+        </div>
+        
+    </div>
+    
+  </div>
+
+  <!--  boutons action-->
+  <div class="col-md-3 mb-1 mt-1 ">
+    <div class="row">
+        <div class="col-md-4">
+            <button routerLink="/{{fournisseur.id}}/edite" type="button" class="btn btn-link">
+                <i class="fas fa-pencil-alt"></i>&nbsp;Modifier
+            </button>
+        </div>
+        <div class="col-md-4">
+            <button (click)="delete(fournisseur.id)" type="button" class="btn btn-link text-danger">
+                <i class="fas fa-trash-alt"></i>&nbsp;Supprimer
+            </button>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+
+</div>

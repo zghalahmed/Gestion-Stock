@@ -1,0 +1,75 @@
+<!-- Bouton Nouveau -->
+<div class="row mb-3">
+    <div class="col-md-12">
+      <button type="button" class="btn btn-primary" routerLink="/nouvelarticle">
+        <i class="fas fa-plus"></i>&nbsp;
+        Nouvel Article
+      </button>
+    </div>
+  </div>
+  
+  <div class="row mb-1 custom-border" *ngFor="let article of articles">
+    <!-- Image -->
+    <div class="col-md-2 border-right m-0">
+      <img [src]="article.image || 'assets/product.png'" width="140px" height="105px" alt="article Image">
+    </div>
+  
+    <!-- Details article -->
+    <div class="col-md-4 border-right m-0">
+      <div class="col">
+        <div class="row">
+          <div class="col-md-1"><i class="fas fa-info-circle blue-color"></i></div>
+          <div class="col-md-11">{{ article.codearticle }}</div>
+        </div>
+        <div class="row">
+          <div class="col-md-1"><i class="fas fa-info-circle blue-color"></i></div>
+          <div class="col-md-11">{{ article.designation }}</div>
+        </div>
+        <div class="row">
+          <div class="col-md-1"><i class="fas fa-dollar-sign blue-color"></i></div>
+          <div class="col-md-11">{{ article.prixunitht }}</div>
+        </div>
+        <div class="row">
+          <div class="col-md-1"><i class="fas fa-dollar-sign blue-color"></i></div>
+          <div class="col-md-11">{{ article.quantite }}</div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Details categorie -->
+    <div class="col-md-3 custom-border-right mb-1 mt-1 ">
+      <div class="row">
+        <div class="col-md-2">
+          <i class="fas fa-flag-checkered blue-color"></i>
+        </div>
+        <div class="col-md-10">
+          <div class="row">
+            <div>{{ article.codeCateg }}</div>
+            <div>{{ article.cat }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Boutons action -->
+    <div class="col-md-3 mb-1 mt-1 ">
+      <div class="row">
+        <div class="col-md-4">
+          <button routerLink="/{{article.id}}/edit" type="button" class="btn btn-link">
+            <i class="fas fa-pencil-alt"></i>&nbsp;Modifier
+          </button>
+        </div>
+        <div class="col-md-4">
+          <button (click)="delete(article.id)" type="button" class="btn btn-link text-danger">
+            <i class="fas fa-trash-alt"></i>&nbsp;Supprimer
+          </button>
+        </div>
+        <div class="col-md-4">
+          <button type="button" class="btn btn-link">
+            <i class="far fa-list-alt"></i>&nbsp;Détails
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

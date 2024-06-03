@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.card {
+  width: 400px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  padding: 20px; 
+}
+
+.card-body {
+  text-align: center; /* Centrage du contenu de la carte */
+}
+
+.form-control {
+  width: 100%; /* Largeur totale des champs de formulaire */
+  margin-bottom: 10px; /* Espacement entre les champs de formulaire */
+}

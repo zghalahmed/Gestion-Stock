@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="card justify-content-md-center">
+    <div class="card-header text-center">
+      Se connecter
+    </div>
+    <div class="card-body">
+      <div class="mb-3">
+        <!-- Ajoutez la liaison de données ngModel pour récupérer la valeur de l'email -->
+        <input type="email" class="form-control" placeholder="Email" [(ngModel)]="email">
+      </div>
+      <div class="mb-3">
+        <!-- Ajoutez la liaison de données ngModel pour récupérer la valeur du mot de passe -->
+        <input type="password" class="form-control" placeholder="Mot de passe" [(ngModel)]="password">
+      </div>
+      <div class="mb-3 d-flex justify-content-between">
+        <a routerLink="/inscrire" class="btn btn-link">S'inscrire</a>
+        <!-- Utilisez la directive (click) pour déclencher la fonction login() -->
+        <button class="btn btn-primary" (click)="login()">
+          <i class="fas fa-check"></i>&nbsp; Se connecter
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

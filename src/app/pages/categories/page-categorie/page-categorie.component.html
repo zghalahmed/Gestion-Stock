@@ -1,0 +1,59 @@
+<div class="col">
+  <div class="row m-3">
+    <div class="col-md-8 p-0">
+      <h2>Liste des categories</h2>
+    </div>
+    <div class="col-md-4 text-right">
+      <!-- Bouton pour ajouter une nouvelle catégorie -->
+      <button type="button" class="btn btn-primary" routerLink="/nouvellecategorie">Nouvelle Catégorie</button>
+    </div>
+  </div>
+  
+  <div class="col m-3" *ngFor="let categorie of categories">
+    
+    <div class="row col-md-12 custom-border mb-3 p-3">
+      <div class="col-md-3 custom-border-right " >
+        {{categorie.codeCat}}
+      </div>
+      <div class="col-md-4 custom-border-right">
+        {{categorie.designationCat}}
+      </div>
+      <div class="col-md-5">
+        <div class="row">
+          <div class="col-md-4">
+            <button routerLink="/{{categorie.id}}/edittt" type="button"  class="btn btn-link">
+              <i class="fas fa-pencil-alt"></i>&nbsp;Modifier
+            </button>
+          </div>
+          <div class="col-md-4">
+            <button (click)="delete(categorie.id)" type="button" class="btn btn-link text-danger">
+              <i class="fas fa-trash-alt"></i>&nbsp;Supprimer
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-light">
+          <i class="fas fa-angle-double-left"></i>
+        </button>
+        <button type="button" class="btn btn-light">
+          <i class="fas fa-angle-left"></i>
+        </button>
+        <button type="button" class="btn btn-light">1</button>
+        <button type="button" class="btn btn-light">2</button>
+        <button type="button" class="btn btn-light">3</button>
+      
+        <button type="button" class="btn btn-light">
+          <i class="fas fa-angle-right"></i>
+        </button>
+        <button type="button" class="btn btn-light">
+          <i class="fas fa-angle-double-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

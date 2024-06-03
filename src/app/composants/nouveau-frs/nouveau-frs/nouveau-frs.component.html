@@ -1,0 +1,71 @@
+<div class="col">
+    <div class="col-md-12 mb-3">
+        <button (click)="fileInput.click()" style="background-color: transparent; border: none;">
+            <img [src]="imgUrl || 'assets/product.png'" class="rounded-circle" width="200px" height="200px" />
+            <input hidden type="file" #fileInput accept="image/*" (change)="fileInput.files && onFileInput(fileInput.files)">
+          </button>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2><i class="fas fa-info-circle blue-color"></i>&nbsp;information du fournisseur</h2>
+                </div>
+            </div>
+            <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                <div class="row mb-3">
+                    <div class="col">
+                        <input type="text" class="form-control" formControlName="Nom" placeholder="Nom">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" formControlName="Adresse1" placeholder="Adresse1">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <input type="text" class="form-control" formControlName="Prenom" placeholder="Prenom">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" formControlName="Adresse2" placeholder="Adresse2">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <input type="text" class="form-control" formControlName="mail" placeholder="E-mail">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" formControlName="Ville" placeholder="Ville">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <input type="text" class="form-control" formControlName="Telephone" placeholder="Telephone">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" formControlName="codepostal" placeholder="code postal">
+                    </div>
+                    
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        &nbsp;
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" formControlName="Pays" placeholder="Pays">
+                    </div>
+                    
+                </div>
+                <div class="col-md-12 text-right">
+                    <button class="btn btn-danger mr-3" >
+                      <i class="fas fa-ban"></i>&nbsp;
+                      Annuler
+                    </button>
+                    
+                    <button class="btn btn-primary mr-3" >
+                      <i class="fas fa-save"></i>&nbsp;
+                      Enregitrer
+                    </button>
+                  </div>
+            </form>
+           
+        </div>
+    </div>
+</div>

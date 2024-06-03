@@ -1,0 +1,211 @@
+{
+  "transactions": [],
+  "articles": [
+    {
+      "id": "977",
+      "codearticle": "rr",
+      "designation": "rrr",
+      "prixunitht": "rr",
+      "tauxtva": "rr",
+      "quantite": 5,
+      "cat": "pizzas",
+      "image": "https://res.cloudinary.com/dexzirjuk/image/upload/v1717419882/yrk4dpgqvbvbwyczlucf.png",
+      "imageUrls": [
+        "https://res.cloudinary.com/dexzirjuk/image/upload/v1717419882/yrk4dpgqvbvbwyczlucf.png"
+      ],
+      "createdDate": "2024-06-03T13:04:45.793Z",
+      "situation": "En attente"
+    }
+  ],
+  "login": [
+    {
+      "email": "zghalahmeda@gmail.com",
+      "password": "123",
+      "id": "e00a"
+    },
+    {
+      "id": "e4b7",
+      "email": "zghalahmeda@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "bc79",
+      "email": "haj@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "264b",
+      "email": "haj@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "3869",
+      "email": "haj@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "1c75",
+      "email": "haj@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "67df",
+      "email": "haj@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "b90f",
+      "email": "haj@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "70be",
+      "email": "haj@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "0d34",
+      "email": "haj@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "016d",
+      "email": "haj@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "5120",
+      "email": "haj@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "3c77",
+      "email": "haj@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "a20e",
+      "email": "haj@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "034d",
+      "email": "haj@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "f770",
+      "email": "haj@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "c372",
+      "email": "haj@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "5534",
+      "email": "haj@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "e7d6",
+      "email": "haj@gmail.com",
+      "password": "12345"
+    }
+  ],
+  "clients": [
+    {
+      "id": "189",
+      "Nom": "Ahmed",
+      "Adresse1": "route  manzel chaker km6.5 code postal 3013",
+      "Prenom": "Zghal",
+      "Adresse2": "3013",
+      "mail": "zghalahmeda@gmail.com",
+      "Ville": "sfax",
+      "Telephone": "25072802",
+      "codepostal": "2022",
+      "Pays": "Tunisie",
+      "image": "https://res.cloudinary.com/dexzirjuk/image/upload/v1717415769/xjrvbhg6os4ayyfjo3pw.jpg",
+      "imageUrls": [
+        "https://res.cloudinary.com/dexzirjuk/image/upload/v1717415769/xjrvbhg6os4ayyfjo3pw.jpg"
+      ],
+      "createdDate": "2024-06-03T11:57:02.895Z",
+      "situation": "En attente"
+    },
+    {
+      "id": "888",
+      "Nom": "Aymen",
+      "Adresse1": "Route matar km 6",
+      "Prenom": "ouerghemmi",
+      "Adresse2": "m7arzaa",
+      "mail": "aymen@gmail.com",
+      "Ville": "sfax",
+      "Telephone": "25897746",
+      "codepostal": "3015",
+      "Pays": "Tunisie",
+      "image": "https://res.cloudinary.com/dexzirjuk/image/upload/v1717418673/kfhrryctbkexpwjs5llw.jpg",
+      "imageUrls": [
+        "https://res.cloudinary.com/dexzirjuk/image/upload/v1717418673/kfhrryctbkexpwjs5llw.jpg"
+      ],
+      "createdDate": "2024-06-03T12:45:41.276Z",
+      "situation": "En attente"
+    }
+  ],
+  "Fournisseurs": [
+    {
+      "id": "1",
+      "Nom": "amin ",
+      "Adresse1": "route  manzel chaker km6.5 code postal 7050",
+      "Prenom": "Zghal",
+      "Adresse2": "route tunis km 10 hay ons",
+      "mail": "zghalahmeda@gmail.com",
+      "Ville": "sfax",
+      "Telephone": "25072802",
+      "codepostal": "3013",
+      "Pays": "tunis",
+      "createdDate": "2024-05-01T12:25:15.306Z",
+      "situation": "En attente"
+    },
+    {
+      "id": "755",
+      "Nom": "Mohamed yassin",
+      "Adresse1": "Gremda km 30",
+      "Prenom": "mathlouthi",
+      "Adresse2": "3013",
+      "mail": "mohamed@gmail.com",
+      "Ville": "sfax",
+      "Telephone": "53383350",
+      "codepostal": "3013",
+      "Pays": "Tunisie",
+      "image": "https://res.cloudinary.com/dexzirjuk/image/upload/v1717421511/dcgsgqvxfs0pteo66ala.jpg",
+      "imageUrls": [
+        "https://res.cloudinary.com/dexzirjuk/image/upload/v1717421511/dcgsgqvxfs0pteo66ala.jpg"
+      ],
+      "createdDate": "2024-06-03T13:32:11.112Z",
+      "situation": "En attente"
+    }
+  ],
+  "categories": [
+    {
+      "id": "776",
+      "codeCat": "66",
+      "designationCat": "boissons",
+      "createdDate": "29/05/2024"
+    },
+    {
+      "id": "284",
+      "codeCat": "124",
+      "designationCat": "pizzas",
+      "createdDate": "2024-06-02T12:32:10.229Z",
+      "situation": "En attente"
+    },
+    {
+      "id": "271",
+      "codeCat": "125",
+      "designationCat": "chicha",
+      "createdDate": "2024-06-02T12:32:24.074Z",
+      "situation": "En attente"
+    }
+  ]
+}

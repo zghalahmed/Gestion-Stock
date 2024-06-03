@@ -1,0 +1,51 @@
+<div class="col">
+    <div class="col-md-12 mb-3">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2><i class="fas fa-info-circle blue-color"></i>&nbsp;Mouvement Du Stock</h2>
+                </div>
+            </div>
+            <form [formGroup]="transactionForm" (ngSubmit)="onSubmit()">
+                <div class="row mb-3">
+                    
+                    <div class="col">
+                        <select class="form-control" formControlName="clientId">
+                            <option *ngFor="let client of clients" [value]="client.id">{{client.Nom}}</option>
+                            
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <select class="form-control" formControlName="articleId">
+                            <option *ngFor="let article of articles" [value]="article.id">{{article.designation}}</option>
+                            
+                        </select>
+                    </div> 
+                    
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <input type="number" class="form-control" formControlName="quantite" placeholder="Quantite">
+                    </div>
+                    
+                    
+                </div>
+              
+                
+                <div class="col-md-12 text-right">
+                    <button class="btn btn-danger mr-3" >
+                      <i class="fas fa-ban"></i>&nbsp;
+                      Annuler
+                    </button>
+                    
+                    <button class="btn btn-primary mr-3" type="submit">
+                      Enregitrer
+                    </button>
+                  </div>
+            </form>
+           
+        </div>
+    </div>
+</div>

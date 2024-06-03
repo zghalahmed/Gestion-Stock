@@ -1,0 +1,60 @@
+<div class="col">
+    <div class="row m-3">
+        <div class="col-md-8 p-0">
+            <h2>Mouvement du stock</h2>
+        </div>
+        <div class="col-md-4 text-right">
+            <app-boutton-action></app-boutton-action>
+        </div>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    .blue-color {
+      color: blue;
+    }
+  </style>
+  <title>Article and Client Table</title>
+</head>
+<body>
+  
+    <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-12">
+            <table class="table table-bordered">
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col">Client Name</th>
+                  <th scope="col">Article Name</th>
+                  <th scope="col">Quantity</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let transaction of Transactions">
+                  <td><i class="fas fa-user blue-color"></i> {{ getClientName(transaction.clientId) }}</td>
+                  <td><i class="fas fa-info-circle blue-color"></i> {{ getArticleName(transaction.articleId) }}</td>
+                  <td><i class="fas fa-dollar-sign blue-color"></i> {{ transaction.quantite }}</td>
+                  <td>
+                    <button class="btn btn-danger" (click)="deleteTransaction(transaction.id)">
+                      <i class="fas fa-trash"></i> Delete
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+    
